@@ -1,0 +1,127 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(RoadRadio.ttf);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#nav{
+    width: 100%;
+    height: 10vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99999;
+    filter: brightness(85%);
+}
+#nav>#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+    letter-spacing: 2px;
+}
+#nav>#nav-part2>a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    font-family: myFirstFont;
+    font-weight: 100;
+
+}
+#nav>#nav-part2>a:hover{
+    border-bottom: 2px solid #fff;
+
+}
+#nav>#nav-part1{
+    padding-left: 50px;
+}
+#nav>#nav-part1>a{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: myFirstFont;
+    letter-spacing:8px;
+  
+}
+#nav>#nav-part2>button{
+ padding: 10px 30px;
+ border-radius: 5px;
+ border: none;
+ font-family: myFirstFont;
+ letter-spacing: 4px;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    filter: brightness(85%);
+    background: black;
+}
+#page1 img{
+width: 100%;
+height: 100vh;
+object-fit: cover;
+object-position: center;
+}
+#page1>#text{
+    position: absolute;
+    bottom: 6%;
+    left: 3%;
+}
+#page1>#text>p{
+    color: #fff;
+    font-family: myFirstFont;
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-weight: 100;
+    letter-spacing:5px;
+}
+#page1>#text>h2{
+
+    color: #F6F4EF;
+    font-family: myFirstFont;
+    font-size: 55px;
+    letter-spacing:15px;
+    font-weight: 300;
+}
+#page1>#text>h2:nth-child(4){
+    padding-bottom: 25px;
+ 
+}
+#page1>#text>button{
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    letter-spacing:10px;
+    background-color: transparent;
+    font-family: myFirstFont;
+    border-radius: 3px;
+    font-weight: 100;
+    text-align: center;
+     filter: brightness(100%);
+}
+#page1>#text>button>i{
+    text-align: center;
+}
+#page1>#text-2>p{
+    position: absolute;
+    right: 3%;
+    bottom: 6%;
+    color: #fff;
+    font-family: myFirstFont;
+    font-size: 15px;
+    font-weight: 10;
+    letter-spacing:5px;
+    filter: brightness(100%);
+}
